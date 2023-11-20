@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    color: bisque;
+}
+
+.red{
+    background-color: #6d2424be;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
