@@ -5,6 +5,7 @@ import {Props} from "./components/Props.jsx";
 import {ButtonApp} from "./components/ButtonApp.jsx"
 import {CounterApp} from "./components/CounterApp.jsx"
 import { ListApp } from "./components/ListApp.jsx";
+import { UsersApp } from "./components/UsersApp.jsx";
 
 import './styles/styles.css'
 
@@ -17,7 +18,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     /> */}
     {/* <ButtonApp /> */}
     {/* <CounterApp value={500}/> */}
-    <ListApp />
+    {/* <ListApp /> */}
+    <UsersApp />
 
   </React.StrictMode>
 );

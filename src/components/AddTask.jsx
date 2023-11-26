@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const AddTask = ({setArray}) => {
+export const AddTask = ({addTask}) => {
     const [inputValue, setinputValue] = useState('')
 
     const onInputChange =(e)=>{
@@ -8,12 +8,8 @@ export const AddTask = ({setArray}) => {
     }
 
     const onSubmit =(e)=>{
-        const envio = {
-            nombre : inputValue,
-            visto : false
-        }
         e.preventDefault()
-        setArray(tasks => [...tasks, envio]) //Agrego tareas modificando el setArray
+        addTask(inputValue) 
     }
 
 
