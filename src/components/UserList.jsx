@@ -3,9 +3,7 @@
 import { useFetchData } from "./hooks/useFetchData"
 
 export const UserList = ({ endPoint }) => {
-
     const { data, isLoading } = useFetchData(endPoint)
-
   return (
     <>
     <ul>
