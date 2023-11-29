@@ -7,7 +7,7 @@ export const UserList = ({ endPoint }) => {
   return (
     <>
     <ul>
-        {endPoint == 'users' 
+        {isLoading ? <p>Loading...</p> : endPoint == 'users' 
             ? data.map(item => <li key={item.id}>Nombre de usuario: {item.name} <br />Email: {item.email}</li>)                     
             : data.map(item => <li key={item.id}>Comentario: {item.body}</li>)}
     </ul>
